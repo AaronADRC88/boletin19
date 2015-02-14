@@ -60,6 +60,10 @@ public class Buzon {
                 JOptionPane.showMessageDialog(null, primNonLeido);
             }
         }
+        if (primNonLeido == "") {
+            JOptionPane.showMessageDialog(null, "Non hai mensaxes por ler");
+        }
+
         return primNonLeido;
     }
 
