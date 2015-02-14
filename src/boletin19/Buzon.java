@@ -58,6 +58,7 @@ public class Buzon {
             if (eMail.get(i).isLeido() == false) {
                 primNonLeido = String.valueOf(eMail.get(i));
                 JOptionPane.showMessageDialog(null, primNonLeido);
+                break;
             }
         }
         if (primNonLeido == "") {
