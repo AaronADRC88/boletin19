@@ -3,9 +3,9 @@ package boletin19;
 import java.util.ArrayList;
 
 public class Correo {
-String contido;
-boolean leido;
-ArrayList <Correo> eMail=new ArrayList<Correo>();
+
+    private String contido;
+    private boolean leido;
 
     public Correo(String contido, boolean leido) {
         this.contido = contido;
@@ -31,17 +31,17 @@ ArrayList <Correo> eMail=new ArrayList<Correo>();
         this.leido = leido;
     }
 
-    public ArrayList<Correo> geteMail() {
-        return eMail;
-    }
-
-    public void seteMail(ArrayList<Correo> eMail) {
-        this.eMail = eMail;
-    }
-
     @Override
     public String toString() {
-        return "Correo{" + "contido=" + contido + ", leido=" + leido + '}';
+        String yes = "Si";
+        String no = "Non";
+        String resposta;
+        if (leido) {
+            resposta = yes;
+        } else {
+            resposta = no;
+        }
+        return "Correo " + contido + "\n leido: " + resposta;
     }
-  
+
 }
